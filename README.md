@@ -37,4 +37,6 @@ This model was used to write to write queries for all necessary reports needed, 
 - Power BI visuals was used to present the reports on  power BI
 
 
-  
+### POWER BI VISUALS
+![Screenshot 2024-11-17 183433](https://github.com/user-attachments/assets/c3e102d2-dd9b-4e62-9134-9224ee3b9e1a)
+

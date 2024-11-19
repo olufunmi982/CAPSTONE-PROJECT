@@ -10,7 +10,7 @@ An overview of Incubator hub capstone customer dataset
 
 This Analysis works on Capstone customer data set with the overview of the subscription trend of capstone customer data as it relates with some factors affecting the subscription types per Region.
 
-### DATA SOURSES
+### DATA SOURCES
 - Microsoft Excel (Download Here)
 - Capstone Customer data set
 

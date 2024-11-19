@@ -37,6 +37,24 @@ This model was used to write to write queries for all necessary reports needed, 
 - Power BI visuals was used to present the reports on  power BI
 
 ### ANALYSIS ON EXCEL
+- To Calculate the Subscription Duration
+```
+=F2-E2
+```
+- Total Revenue
+```
+=SUM(H2:H33788)
+```
+=AVERAGE(H2:H33788)
+```
+- Average Subscription Duration
+```
+=AVERAGE(I2:I33788)
+```
+- Total Revenue by Region
+```
+=SUM(C2:C33788,"Region",H2:H33788)
+```
 
 ### POWER BI VISUALS
 ![Screenshot 2024-11-17 183433](https://github.com/user-attachments/assets/c3e102d2-dd9b-4e62-9134-9224ee3b9e1a)

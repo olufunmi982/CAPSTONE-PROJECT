@@ -74,6 +74,59 @@ This model was used to write to write queries for all necessary reports needed, 
 
 ![Excel customer data visual 7](https://github.com/user-attachments/assets/1963f7c4-ff99-4764-b602-ed7185937076)
 
+### Analysis on SQL
+- Retrieve the total number of customers from each region
+```
+SELECT Region, COUNT(CustomerID) AS Total_No_of_Customers
+FROM [dbo].[Customer Data]
+GROUP BY Region
+```
+- Popular subscription type by the number of customers
+```
+SELECT SubscriptionType,COUNT(CustomerID)AS NO_Of_Customers
+FROM [dbo].[Customer Data]
+GROUP BY SubscriptionType
+```
+- Customers who canceled their subscription within 6 months
+```
+SELECT CustomerName,Canceled,SubscriptionStart
+FROM [dbo].[Customer Data]
+WHERE Canceled =0 AND MONTH(SubscriptionStart) BETWEEN 1 AND 6
+```
+- Average subscription duration for all customers
+```
+SELECT Count(CustomerID) As
+All_Customers,AVG(DATEDIFF(DAY,SubscriptionStart,SubscriptionEnd)) AS
+Average_Subscription_Duration
+FROM [dbo].[Customer Data]
+WHERE SubscriptionEnd IS NOT NULL
+```
+- Customers with subscriptions longer than 12 months
+```
+SELECT CustomerName,SubscriptionType,SubscriptionStart,SubscriptionEnd
+FROM [dbo].[Customer Data]
+WHERE DATEDIFF(MONTH,SubscriptionStart,SubscriptionEnd) >=12
+```
+- Total revenue by subscription type
+```
+SELECT SubscriptionType,SUM(Revenue) AS Total_Revenue
+FROM[dbo].[Customer Data]
+GROUP BY SubscriptionType
+```
+- Top 3 regions by subscription cancellations
+```
+SELECT TOP 3 Region,Canceled
+FROM [dbo].[Customer Data]
+```
+- Total number of active and canceled subscriptions
+```
+SELECT
+SUM( CASE WHEN Canceled = 0 THEN 1 ELSE 0 END) AS ActiveSubscriptions,
+SUM (CASE WHEN Canceled = 1 THEN 1 ELSE 0 END) AS CanceledSubscriptions
+FROM [dbo].[Customer Data]
+GROUP BY CustomerID_
+```
+
 ### POWER BI VISUALS
 
 ![Screenshot 2024-11-17 183433](https://github.com/user-attachments/assets/c3e102d2-dd9b-4e62-9134-9224ee3b9e1a)

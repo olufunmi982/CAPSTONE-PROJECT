@@ -59,6 +59,21 @@ This model was used to write to write queries for all necessary reports needed, 
 =SUM(C2:C33788,"Region",H2:H33788)
 ```
 
+### Below are the visuals on Excel
+![Excel customer data visual](https://github.com/user-attachments/assets/af6c03ad-8068-4266-a1eb-d39677553ece)
+
+![Excel customer data visual 2](https://github.com/user-attachments/assets/8845a987-3e0d-457f-885c-6c703bdae2b4)
+
+![Excel customer data visual 3](https://github.com/user-attachments/assets/324b2c65-0e28-4088-b5c7-530d8dc7eff1)
+
+![Excel customer data visual 4](https://github.com/user-attachments/assets/5d992ac6-7465-4aab-9709-bca6da00da19)
+
+![Excel customer data visual 5](https://github.com/user-attachments/assets/c1cfb013-63d0-4b8f-a3a1-66321e76977c)
+
+![Excel customer data visual 6](https://github.com/user-attachments/assets/f8770029-b2ec-4fcf-a748-1e4fa0534f0b)
+
+![Excel customer data visual 7](https://github.com/user-attachments/assets/1963f7c4-ff99-4764-b602-ed7185937076)
+
 ### POWER BI VISUALS
 
 ![Screenshot 2024-11-17 183433](https://github.com/user-attachments/assets/c3e102d2-dd9b-4e62-9134-9224ee3b9e1a)

@@ -126,6 +126,7 @@ SUM (CASE WHEN Canceled = 1 THEN 1 ELSE 0 END) AS CanceledSubscriptions
 FROM [dbo].[Customer Data]
 GROUP BY CustomerID_
 ```
+### Results of Analysis on SQL
 
 ### POWER BI VISUALS
 
